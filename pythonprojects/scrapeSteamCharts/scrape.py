@@ -60,7 +60,7 @@ for chartElements in chartElements:
     elif counter == 3:
         print("all-time peak ", chartElements.text, end="\n"*2)
         
-#------------------------------------------------------------------------
+#-----------------------------------------------------------------------
 
 url = "https://steamcharts.com/app/730"
 
