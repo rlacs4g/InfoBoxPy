@@ -1,4 +1,4 @@
-import tkinter
+import tkinter, tkinter.messagebox
 from tkinter.constants import COMMAND
 
 
@@ -8,10 +8,16 @@ top = tkinter.Tk()
 def clickExitButton():
     
     exit()
+def clickIButton():
+    tkinter.messagebox.showinfo(title=None, message="Hello World!")
+
+x = tkinter.Button(top, text="Exit",command = clickExitButton)
 
 
-w = tkinter.Button (top, text="Ex",command = clickExitButton)
-w.pack()
+i = tkinter.Button(top, text="info", command = clickIButton)
+
+i.pack()
+x.pack()
 
 top.mainloop()
 
